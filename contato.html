@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junte-se a nós</title>
+    <link rel="shortcut icon" href="media/logo.aqc.global.png" type="image/x-icon">
+    <link rel="stylesheet" href="Estilo/style.css">
+    <link rel="stylesheet" href="Estilo/formulario.css">
+</head>
+<body>
+    <script src="JS/funcao.js"></script>
+    <header id="topo">
+        <img src="media/TopoSite.jpg" width="1200" title="Quarteto Ambiental" alt="Logo do Site">
+    </header>
+    <main>
+        <section>
+            <header>
+                <h1> Formulário de contato</h1>
+            </header>
+
+            <form method="post"  id="fcontato" action="">
+                <fieldset id="usuario">
+                    <legend>Identificação do Usuário</legend>
+                    <p><label for="cNome">Nome:</label> <input type="text"  name="tNome" id="cNome" size="25" placeholder="Nome Completo" maxlength="80"/></p>
+                    <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="25" maxlength="40" placeholder="seu e-mail@exemplo.com"/> </p>
+                    <fieldset id="sexo">
+                        <legend>Sexo:</legend>
+                            <input type="radio" name="tSexo" id="cMasc"/><label for="cMasc"> Masculino</label><br>
+                            <input type="radio" name="tSexo" id="cFem"/><label for="cFem"> Feminino</label>
+                    </fieldset> 
+                    <br>
+                    <p><label for="cNasc">Data de Nascimento:  <input type="date" name="tNasc" id="cNasc"/> </label></p>
+                </fieldset>
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend><br>
+                        
+                            <textarea name="tMsg" id="cMsg" cols="25" rows="7" placeholder="Deixe aqui sua mensagem"></textarea>
+                </fieldset>
+                <br>
+                <input type="submit"  value="Enviar" name="" class="botao" onclick="mensagemEnviada()">
+                <input type="reset" value="Apagar" class="botao">
+                
+            </form>
+        </section>
+    <br>
+    <hr>
+
+    <p><a href="Pagina01.html">Voltar a página inicial</a></p>   
+    
+</main>
+<hr>
+    <footer>
+        &copy; Todos os direitos reservados<br>
+        Desenvolvedores: Quarteto Ambiental<br>
+        E-mail: quartetoambientaloficial@gmail.com
+    </footer>
+</body>
+</html>
